@@ -1,0 +1,38 @@
+{
+  "package": {
+    "dependencies": {
+      "react-scripts": "^4.0.3"
+    },
+    "scripts": {
+      "start": "npm run build && serve -l 5000 dist",
+      "build": "webpack --mode development",
+      "coverage": "npm test -- --coverage --coverageDirectory=reports/coverage --watchAll=false",
+      "test": "react-scripts test",
+      "generate": "plop"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.16.0",
+      "@babel/plugin-proposal-class-properties": "^7.16.0",
+      "@babel/plugin-proposal-object-rest-spread": "^7.16.0",
+      "@babel/plugin-syntax-class-properties": "^7.12.13",
+      "@babel/preset-env": "^7.16.4",
+      "@babel/preset-react": "^7.16.0",
+      "babel-loader": "8.1.0",
+      "chai": "^4.3.4",
+      "enzyme": "^3.11.0",
+      "enzyme-adapter-react-16": "^1.15.6",
+      "html-to-react": "^1.3.4",
+      "husky": "^7.0.4",
+      "plop": "^2.7.6",
+      "prop-types": "^15.7.2",
+      "react": "^16.8.6",
+      "react-dom": "^16.8.6",
+      "serve": "^13.0.2",
+      "webpack": "4.44.2",
+      "webpack-cli": "^4.9.1"
+    }
+  }  
+}

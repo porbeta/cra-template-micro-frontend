@@ -1,0 +1,17 @@
+import { ReactElement } from '../ReactElement.js';
+import * as React from 'react';
+import { render } from 'react-dom';
+import { {{properCase name}}Component } from '../components/{{properCase name}}Component.js';
+
+export class {{properCase name}}Element extends ReactElement {
+    mount() {
+        const propTypes = {{properCase name}}Component.propTypes ? {{properCase name}}Component.propTypes : {};
+        const events = {{properCase name}}Component.propTypes ? {{properCase name}}Component.propTypes : {};
+        const props = {
+            ...this.getProps(this.attributes, propTypes),
+            ...this.getEvents(events),
+            children: this.parseHtmlToReact(this.innerHTML)
+        };
+        render(<{{properCase name}}Component {...props} />, this);
+    }
+}

@@ -1,0 +1,18 @@
+import { {{properCase name}}Element } from '../../main/elements/{{properCase name}}Element.js';
+import { expect } from 'chai';
+import '../../index.js';
+
+
+test('should create {{properCase name}}Element with properties', () => {
+    const element = new {{properCase name}}Element();
+
+    element.setAttribute('customProperty', "Success!");
+    element.addEventListener('onCustomEvent', () => {});
+    element.connectedCallback();
+
+    expect(element.getElementsByTagName('p')[0].innerHTML).to.equal("Hello <strong>Success!</strong> from your friendly React component.");
+    
+    element.disconnectedCallback();
+
+    expect(element.innerHTML).to.equal("");
+});

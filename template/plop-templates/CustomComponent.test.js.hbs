@@ -1,0 +1,14 @@
+import * as React from 'react';
+import {shallow, configure} from 'enzyme';
+import { {{properCase name}}Component } from '../../main/components/{{properCase name}}Component.js';
+import Adapter from 'enzyme-adapter-react-16';
+import { expect } from 'chai';
+
+configure({adapter: new Adapter()});
+
+test('should create {{properCase name}}Component with properties', () => {
+    const onChange = () => {};
+
+    const wrapper = shallow(<{{properCase name}}Component customProperty="Success!" onCustomEvent={onChange} />);
+    expect(wrapper.find('p').text()).to.equal('Hello Success! from your friendly React component.');
+});

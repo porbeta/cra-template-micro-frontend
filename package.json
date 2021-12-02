@@ -1,0 +1,28 @@
+{
+  "name": "cra-template-micro-frontend",
+  "version": "1.0.0",
+  "keywords": [
+    "react",
+    "custom-elements",
+    "micro-frontend",
+    "create-react-app",
+    "template"
+  ],
+  "description": "A Create React App template for creating custom elements (using Web Components).",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/porbeta/create-template-micro-frontend.git",
+    "directory": "packages/cra-template-micro-frontend"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "bugs": {
+    "url": "https://github.com/porbeta/create-template-micro-frontend/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
