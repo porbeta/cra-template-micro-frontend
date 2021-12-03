@@ -1,5 +1,6 @@
 {
   "package": {
+    "main": "dist/main.js",
     "dependencies": {
       "react-scripts": "^4.0.3"
     },
