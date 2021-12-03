@@ -4,11 +4,11 @@ This is the official base template for the [Create React App Micro-Frontend](htt
 
 You can use this template by running the following:
 ```
-npx create-react-app my-app --template micro-frontend
+npx create-react-app my-app --template @porbeta/micro-frontend
 ```
 
 ```
-yarn create react-app my-app --template micro-frontend
+yarn create react-app my-app --template @porbeta/micro-frontend
 ```
 
 For more information, please refer to:

@@ -1,8 +1,0 @@
-.husky/
-plop-templates/
-reports/
-src/
-babel.config.js
-plopfile.js
-webpack.config.js
-*.tgz
