@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+## `npm run dev`
+
+Starts a live development server using [webpack](https://webpack.js.org/) that exposes a test UI for the custom element, available by default at `http://localhost:8080/test-ui`.
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
