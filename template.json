@@ -5,7 +5,8 @@
       "react-scripts": "^4.0.3"
     },
     "scripts": {
-      "start": "npm run build && serve -l 5000 dist",
+      "dev": "webpack serve",
+      "start": "npm run build && serve -l 8080 dist",
       "build": "webpack --mode development",
       "coverage": "npm test -- --coverage --coverageDirectory=reports/coverage --watchAll=false",
       "test": "react-scripts test",
